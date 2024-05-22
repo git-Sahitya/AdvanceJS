@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch offline data</title>
+</head>
+<body>
+    <script>
+
+        fetch("main.json")
+
+        .then((response)=>{
+            
+            return response.json();
+        })
+        .then((data)=>{
+
+            console.log(data);
+        
+
+        for(let x in data){
+
+            let a = ` ${data[x].name}- ${data[x].age}-${data[x].city}`;
+
+            document.write(a);
+        }
+    })
+        .catch((error)=>{
+
+            console.log("can find data");
+        })
+    </script>
+</body>
+</html>

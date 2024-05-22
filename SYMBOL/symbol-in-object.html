@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol in Object</title>
+</head>
+<body>
+    <script>
+        let country = Symbol("India");
+
+        let user = {
+
+            name : "Aman",
+
+            age : 23,
+
+            Course : "Btech" ,
+
+            city : "Varanasi",
+
+            state : "UtterPradesh",
+
+            [country] : "India"
+        };
+
+        
+
+        console.log(user.name);
+
+        console.log(user.age);
+
+        console.log(user.Course);
+
+        console.log(user.city);
+
+        console.log(user.state);
+
+        console.log(user[country]);
+    </script>
+</body>
+</html>

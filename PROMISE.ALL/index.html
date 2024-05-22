@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let p1 = new Promise ((resolve,reject)=>{
+                
+                  console.log('The First Promise');
+                  resolve(10);
+                
+              });
+                                
+              let p2 = new Promise ((resolve,reject)=>{
+                
+                  console.log('The Second Promise');
+                  resolve(20);
+               
+              });
+
+              let total=0;
+
+              Promise.all([p1,p2]).then((result) =>{
+             
+            for(let a in result){
+  
+            total += result[a];
+            }
+            console.log(`Result : ${result}`);
+
+            console.log(`Total :${total}`)
+
+        }).catch((error)=>{
+
+            console.log(`Error : ${error}`)
+        });
+    </script>
+</body>
+</html>                        

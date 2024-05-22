@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator</title>
+</head>
+<body>
+    <script>
+        function *gen(){
+
+            yield  'you are no. 1';
+
+            yield 'you are no. 2';
+
+            yield 'you are no. 3';
+
+        }
+
+        let box = gen();
+
+        console.log(box.next().value);
+
+        box.next();
+
+        console.log(box.next().value);
+    </script>
+</body>
+</html>

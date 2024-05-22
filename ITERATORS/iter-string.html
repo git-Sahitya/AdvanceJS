@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterator for string</title>
+</head>
+<body>
+    <script>
+        let str = "HAR HAR MAHADEV";
+
+        let iter = str[Symbol.iterator]();
+        
+        let result = iter.next();
+
+        while(!result.done){
+
+            console.log(result.value);
+            
+            result = iter.next();
+        }
+    </script>
+</body>
+</html>

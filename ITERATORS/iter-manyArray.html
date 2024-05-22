@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if many array present</title>
+</head>
+<body>
+    <script>
+        let members = [1,3,4,5,6,7,8,9,10,2,11,22,54,76,56,98,8,321,657,757,98,91,92,93,94,94,95,96 ,29,57,38,4585];
+
+        let iter = members[Symbol.iterator]();
+
+        let result = iter.next();
+
+         while(!result.done){
+
+            console.log(result.value)
+
+            result = iter.next();
+         }
+
+    </script>
+</body>
+</html>

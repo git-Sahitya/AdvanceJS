@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let x = ["Apple","Orange","Grapes","Banana","Papaya","Guava","Mango","litchi","PineApple","Kiwi"];
+
+    let y =x[Symbol.iterator]();
+
+    console.log(y.next());
+
+    y.next();                           // Orange has been skipped .
+
+    console.log(y.next());
+    console.log(y.next());
+    console.log(y.next());
+    console.log(y.next());
+    console.log(y.next());
+    console.log(y.next());
+    console.log(y.next());
+    console.log(y.next());
+    console.log(y.next());              // not any value so done : true
+    
+   </script> 
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator</title>
+</head>
+<body>
+    <script>
+        function *gen(){
+
+            yield 55;
+
+            yield* ['Node','React','Angular','MongoDB'];  // if (*) not write nexy to the yeild then only there is no controls in the function.
+        
+        }
+
+        let box = gen();
+
+        console.log(box.next().value);
+
+       // console.log(box.next().value);
+
+      //  console.log(box.next().value);
+       
+         console.log([...box]);       // We can also write this things.
+    </script>
+</body>
+</html>

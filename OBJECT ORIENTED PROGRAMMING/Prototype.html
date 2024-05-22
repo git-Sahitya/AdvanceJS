@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class student{
+
+            constructor (name,age){
+
+                this.studentname = name;                //Class
+
+                this.studentage = age;
+                console.log("Constructoor Function");
+                
+            }
+            hello(){
+
+                console.log(`Hello ${this.studentname} 
+                your age is ${this.studentage}`);                    //prototype-Method
+            }
+
+        }
+
+        let a = new student("Sahil",26);         //object
+        a.hello();                                            //call the function
+
+        let b = new student("Anil",26);
+        b.hello();
+
+
+        let c = new student("Rakesh",26);
+        c.hello();
+
+
+
+    </script>
+</body>
+</html>

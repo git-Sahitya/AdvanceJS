@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+     function sum (name,course,...argus){
+    
+        console.log(`Hello ${name} of ${course}:`);
+
+        console.log(arguments);  // they showed the details of this code.
+
+        let sum = 0;
+        for(let a in argus){
+
+            sum += argus[a];
+        }
+          console.log(sum );
+     }
+     sum("Sahitya","Btech",22,44,55,7,22,100);
+
+     sum ("Aman" , "BA", 2,4,3,1);
+   </script> 
+</body>
+</html>

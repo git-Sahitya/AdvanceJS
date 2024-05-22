@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function sum(name,...box){
+            
+            console.log(`Hello ${name}:`);
+
+            let sum = 0;
+             for (let b in  box){
+
+                sum += box[b];
+             }
+
+             console.log(sum);
+
+        }
+
+          let ary = [10,20,30,40];                      // that's called spread operator
+
+        sum("Rahul",...ary); 
+
+        let cake = [20,60,80,100];
+
+         sum("Aman",...cake);
+        
+        
+                                                   
+    </script>
+</body>
+</html>
